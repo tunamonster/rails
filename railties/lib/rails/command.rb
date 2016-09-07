@@ -17,7 +17,7 @@ module Rails
         @hidden_commands ||= []
       end
 
-      def environment
+      def environment # :nodoc:
         ENV["RAILS_ENV"] || ENV["RACK_ENV"] || "development"
       end
 
